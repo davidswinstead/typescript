@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/a2bremov/davidswinstead.comn/misc/typescript/
+    - export DEPLOYPATH=/home/a2bremov/davidswinstead.comn/misc/typescript
     - /bin/cp -R * $DEPLOYPATH
     - cd $DEPLOYPATH
     - npm install
-    - npx tsc
+    - ./node_modules/.bin/tsc
